@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a55.clase04_tp_pantallas.RegistroUsuarioActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <!--Titulo-->
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:text="Registro de Usuario"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30dp"
+
+            android:textAlignment="center" />
+
+        <!--SubTitulo-->
+        <TextView
+            android:id="@+id/tvSubTitulo"
+            android:text="Esta es la pantalla de registro.\n Por favor ingrese datos verdaderos."
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:textSize="15dp"
+            android:textAlignment="center" />
+
+        <!--*** INPUTS ***-->
+
+        <!--Nombre-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+            <!--tvNombre-->
+            <TextView
+                android:id="@+id/tvNombre"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Nombre: "/>
+
+            <!--etNombre-->
+            <EditText
+                android:id="@+id/etNombre"
+                android:inputType="text"
+                android:maxLines="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:hint="Ingrese su nombre"/>
+
+        </LinearLayout>
+
+        <!--Apellido-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+            <!--tvClave-->
+            <TextView
+                android:id="@+id/tvApellido"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Apellido: "/>
+
+            <!--etClave-->
+            <EditText
+                android:id="@+id/etApellido"
+                android:inputType="text"
+                android:maxLines="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:hint="Ingrese su apellido" />
+
+        </LinearLayout>
+
+        <!--DNI-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+            <!--tvDni-->
+            <TextView
+                android:id="@+id/tvDni"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="DNI: "/>
+
+            <!--etDni-->
+            <EditText
+                android:id="@+id/etDni"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:inputType="number"
+                android:maxLength="8"
+                android:hint="Ingrese su DNI"/>
+                <!-- android:minLength="7" -->
+
+        </LinearLayout>
+
+        <!--Email-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+            <!--tvEmail-->
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Email: "/>
+
+            <!--etEmail-->
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:inputType="textEmailAddress"
+                android:hint="Ingrese su email" />
+
+        </LinearLayout>
+
+        <!--Clave1-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+            <!--tvClave1-->
+            <TextView
+                android:id="@+id/tvClave1"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Clave: "/>
+
+            <!--etClave1-->
+            <EditText
+                android:id="@+id/etClave1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:inputType="textPassword"
+                android:hint="Ingrese su clave" />
+
+        </LinearLayout>
+
+        <!--Clave2-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+            <!--tvClave2-->
+            <TextView
+                android:id="@+id/tvClave2"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Reingrese: "/>
+
+            <!--etClave2-->
+            <EditText
+                android:id="@+id/etClave2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:inputType="textPassword"
+                android:hint="Reingrese su clave" />
+
+        </LinearLayout>
+
+        <!--*** BOTONES ***-->
+
+        <!--Registrarme-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+            <!--btnRegistrarme-->
+            <Button
+                android:id="@+id/btnRegistrarme"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:background="#36a420"
+                android:textColor="#fff"
+                android:text="Registrarme"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
